@@ -102,14 +102,14 @@ main video {
     height: 600%; /* Ajusta el alto de la imagen */
 }
 
-.hero {
+.hero { /* titulo de seccion */
     color:  rgb(4, 35, 29);
     font-family: 'roboto';
     font: bold 300%;
     margin: 10px;
     padding: 30px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -119,6 +119,25 @@ main video {
     margin: 5px;
 }
 
+.proyecto { /* cards */
+    display: flex;
+    justify-content: space-evenly;
+}
+.proyecto div img {
+    margin-bottom: 5px;
+}
+
+.proyecto div {
+    border: 2px rgb(4,35,29) solid;
+    border-radius: 10px;
+    width: 358px;
+    height: 400px;
+    text-align: center;
+    margin: 130px;
+}
+.proyecto div p {
+    padding: 10px;
+}
 .redes {   /*!redes en vertical*/
     width: 35px;
     height: 35px;
@@ -132,21 +151,6 @@ main video {
     display: flex;
     flex-direction: column;
 }
-
-.proyecto {
-    display: flex;
-}
-
-.proyecto div {
-    border: 2px rgb(4,35,29) solid;
-    border-radius: 5px;
-    width: 358px;
-    height: 400px;
-    text-align: center;
-    margin: 130px;
-    display: inline-block;
-}
-
 
 /*!---------- FOOTER---------- */
 
