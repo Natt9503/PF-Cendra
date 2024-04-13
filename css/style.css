@@ -97,7 +97,7 @@
 }
 
 /*! ----------------MAIN --------------------*/
-main video {
+main div section video {
     width: 100%; /* Ajusta el ancho de la imagen */
     height: 600%; /* Ajusta el alto de la imagen */
 }
@@ -119,25 +119,32 @@ main video {
     margin: 5px;
 }
 
-.proyecto { /* cards */
+.cards-proyectos { /* cards */
     display: flex;
     justify-content: space-evenly;
-}
-.proyecto div img {
-    margin-bottom: 5px;
+    
 }
 
-.proyecto div {
-    border: 2px rgb(4,35,29) solid;
+.cards-proyectos div img {
+    margin-bottom: 5px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.cards-proyectos div {
+    border: 2px rgba(4, 35, 29, 0.63) solid;
     border-radius: 10px;
-    width: 358px;
-    height: 400px;
+    width: 500%;
+    
     text-align: center;
     margin: 130px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); /* sombra */
 }
-.proyecto div p {
+
+.cards-proyectos div p {
     padding: 10px;
 }
+
+
 .redes {   /*!redes en vertical*/
     width: 35px;
     height: 35px;
