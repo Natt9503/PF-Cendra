@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.roboto-thin-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.roboto-light-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.roboto-regular-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.roboto-medium-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.roboto-bold-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.roboto-black-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* {
+    font-family: 'roboto';
+}
+
+/*! --------------HEADER --------------*/
+.navbar-color {
+    background-color:   rgb(4, 35, 29);
+}
+
+.nav-link {
+    color: white;
+}
+
+.custom-link {
+    color: rgb(33, 138, 118) !important;
+}
+
+/*! ----------------MAIN --------------------*/
+main video {
+    width: 100%; /* Ajusta el ancho de la imagen */
+    height: 600%; /* Ajusta el alto de la imagen */
+}
+
+.hero {
+    color:  rgb(4, 35, 29);
+    font-family: 'roboto';
+    font: bold 300%;
+    margin: 10px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero h2 a {
+    text-decoration: none;
+    color:  rgb(4,35,29);
+    margin: 5px;
+}
+
+.redes {   /*!redes en vertical*/
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+    margin: 10px 20px 10px 10px;
+}
+
+.social {
+    position: fixed;
+    top: 450px;
+    display: flex;
+    flex-direction: column;
+}
+
+.proyecto {
+    display: flex;
+}
+
+.proyecto div {
+    border: 2px rgb(4,35,29) solid;
+    border-radius: 5px;
+    width: 358px;
+    height: 400px;
+    text-align: center;
+    margin: 130px;
+    display: inline-block;
+}
+
+
+/*!---------- FOOTER---------- */
+
+footer {
+    background-color: rgb(4, 35, 29);
+    padding: 30px 10px;
+    color: white;
+    font-style: normal;
+    margin: auto; /*para que se mantenga centrado*/
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+    
+}
+
+footer div p{
+        padding: 10px 0px 10px 0px;
+}
+
+footer div {
+    text-align: start;
+}
+
+footer div a {
+    text-decoration: none;
+    color: white;
+    display: block; /* Convertir en bloque */
+    padding: 10px 0px 10px 0px;
+}
+
+footer div a i {
+    padding: 5px 5px 5px 0px;
+}
+
+
+
+/*----
+footer a img {
+    width: 20%; 
+    height: 20%; 
+}*/
+
+/*
+.arrowarriba {
+    display: inline-block;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    cursor: pointer;
+}*/
+
+.fixed { 
+    /* para que el logo de wsp siempre este en el costado */
+    position: fixed;
+    bottom: 15px;  /*margen*/
+    right: 15px; /*margen*/
+}
