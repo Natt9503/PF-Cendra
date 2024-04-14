@@ -15,7 +15,7 @@
     <header id="arrow"> <!--estoy llamando al enlace interno / vuelve arriba-->
         <nav class="navbar navbar-expand-lg navbar-color">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="./img/logoblanco.png" alt="imagen del logo"></a>
+                <a class="navbar-brand" href="./index.html"><img src="./img/logoblanco.png" alt="imagen del logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -64,8 +64,7 @@
     </header>
     <!--REDES EN VERTICAL COSTADO-->
     <section class="social">
-        <img src="./img/whatsaap.png" class="redes" alt="whatsaap">
-        <img src="./img/instagram.png" class="redes" alt="instagram">
+             <img src="./img/instagram.png" class="redes" alt="instagram">
         <img src="./img/behance.png" class="redes" alt="behance">
         <img src="./img/linkedin.png" class="redes" alt="linkedin">
     </section>
@@ -78,35 +77,37 @@
                 <!-- width 100% y height 100%-->
             </section>
         </div>
-
-        <section class="hero"> <!-- destacados-->
-            <h2>Proyectos destacados</h2>
-            <h2><a href="./pages/proyectos.html">Ver todos los proyectos</a><i class="bi bi-arrow-right"></i></h2>
-        </section>
-
-        <section class="cards-proyectos">
-            <div>
-                <img src="./img/socialmediabehance.jpg" alt="sicial media">
-                <!--ACA VA UN CHIP QUE NOSE COMO SE PONE-->
-                <h5>Social Media</h5>
-                <P>Diseños para revistas y redes exclusivos de negocios.</P>
-            </div>
-
-            <div>
-                <img src="./img/appvegandesignuxui.jpg" alt="app vegana uxui">
-                <!--ACA VA UN CHIP QUE NOSE COMO SE PONE-->
-                <h5>App UX UI</h5>
-                <P>App culinaria con recetas simples, compras, consejos y nutricionistas."</P>
-            </div>
-
-            <div>
-                <img src="./img/shooting .jpg" alt="shooting">
-                <!--ACA VA UN CHIP QUE NOSE COMO SE PONE-->
-                <h5>Shooting</h5>
-                <P>espectacular shooting fotografico 
-                </P>
-            </div>
-        </section>
+        
+        <div> <!-- seccion completa-->
+            <section class="flextitulo"> <!-- destacados-->
+                <h2>Proyectos destacados</h2>
+                <h2><a href="./pages/proyectos.html">Ver todos los proyectos</a><i class="bi bi-arrow-right"></i></h2>
+            </section>
+    
+            <section class="flexcardpadre"> 
+                <div class="flexcardhijo">
+                    <img src="./img/socialmediabehance.jpg" alt="sicial media">
+                    <!--ACA VA UN CHIP QUE NOSE COMO SE PONE-->
+                    <h5>Social Media</h5>
+                    <P>Diseños para revistas y redes exclusivos de negocios</P>
+                </div>
+    
+                <div class="flexcardhijo">
+                    <img src="./img/appvegandesignuxui.jpg" alt="app vegana uxui">
+                    <!--ACA VA UN CHIP QUE NOSE COMO SE PONE-->
+                    <h5>App UX UI</h5>
+                    <P>App culinaria con recetas simples, compras, consejos y nutricionistas</P>
+                </div>
+    
+                <div class="flexcardhijo">
+                    <img src="./img/shooting .jpg" alt="shooting">
+                    <!--ACA VA UN CHIP QUE NOSE COMO SE PONE-->
+                    <h5>Shooting</h5>
+                    <P>espectacular shooting fotográfico 
+                    </P>
+                </div>
+            </section>
+        </div>
 
     </main>
 
