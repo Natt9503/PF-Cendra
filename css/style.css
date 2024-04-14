@@ -105,7 +105,7 @@ main div section video {
 }
 
 .flextituloproyecto {
-    /* esto es una class de la page proyectos, nose si va asi */
+    /** esto es una class de la page PROYECTOS, nose si va en este lugar */
     color: rgb(4, 35, 29);
     margin: 10px;
     padding: 30px;
@@ -115,6 +115,29 @@ main div section video {
     flex-wrap: wrap;
     /* Permite que los elementos hijos se envuelvan */
 }
+.flexpadreproyecto{
+    /* contenedor de las cards */
+    display: flex;
+    /* Asegura que los elementos .flexcardhijo estén uno al lado del otro */
+    justify-content: start;
+    /* Distribuye los elementos horizontalmente */
+    flex-wrap: wrap;
+    /* Permite que los elementos se envuelvan cuando no haya suficiente espacio */
+}
+.flexhijoproyecto {
+    border: 2px rgba(4, 35, 29, 0.63) solid;
+    border-radius: 10px;
+    max-width: 400px;
+    /* un ancho máximo */
+    text-align: center;
+    margin: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);/* sombra */
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+/** INDEX */
 
 .flextituloproyecto h1 {
     font-size: 40px;
