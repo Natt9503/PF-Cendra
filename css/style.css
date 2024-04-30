@@ -104,6 +104,8 @@ main div section video {
     /* Ajusta el alto de la imagen */
 }
 
+/** PROYECTOS */
+
 .flextituloproyecto {
     /** esto es una class de la page PROYECTOS, nose si va en este lugar */
     color: rgb(4, 35, 29);
@@ -115,7 +117,8 @@ main div section video {
     flex-wrap: wrap;
     /* Permite que los elementos hijos se envuelvan */
 }
-.flexpadreproyecto{
+
+.flexpadreproyecto {
     /* contenedor de las cards */
     display: flex;
     /* Asegura que los elementos .flexcardhijo estén uno al lado del otro */
@@ -124,6 +127,7 @@ main div section video {
     flex-wrap: wrap;
     /* Permite que los elementos se envuelvan cuando no haya suficiente espacio */
 }
+
 .flexhijoproyecto {
     border: 2px rgba(4, 35, 29, 0.63) solid;
     border-radius: 10px;
@@ -131,7 +135,8 @@ main div section video {
     /* un ancho máximo */
     text-align: center;
     margin: 20px;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);/* sombra */
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    /* sombra */
     flex-direction: row;
     justify-content: start;
     align-items: center;
@@ -139,10 +144,7 @@ main div section video {
 
 /** INDEX */
 
-.flextituloproyecto h1 {
-    font-size: 40px;
-    font-weight: bold;
-}
+
 .flextitulo {
     /* titulo de seccion */
     color: rgb(4, 35, 29);
@@ -155,6 +157,11 @@ main div section video {
     align-items: center;
     flex-wrap: wrap;
     /* Permite que los elementos hijos se envuelvan */
+}
+
+.flextitulo h2 {
+    font-size: 40px;
+    font-weight: bold;
 }
 
 .flextitulo h4 a {
@@ -173,14 +180,6 @@ main div section video {
     /* Permite que los elementos se envuelvan cuando no haya suficiente espacio */
 }
 
-.flexcardhijo img {
-    margin-bottom: 5px;
-    border-radius: 10px 10px 0px 0px;
-    width: 100%;
-    /* Establece el ancho al 100% del contenedor */
-    height: auto;
-    /* Permite que la altura se ajuste automáticamente para mantener la proporción */
-}
 
 .flexcardhijo {
     border: 2px rgba(4, 35, 29, 0.63) solid;
@@ -196,6 +195,15 @@ main div section video {
     justify-content: space-between;
     align-items: center;
 
+}
+
+.flexcardhijo img {
+    margin-bottom: 5px;
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+    /* Establece el ancho al 100% del contenedor */
+    height: auto;
+    /* Permite que la altura se ajuste automáticamente para mantener la proporción */
 }
 
 .flexcardhijo p {
@@ -218,6 +226,88 @@ main div section video {
     top: 450px;
     display: flex;
     flex-direction: column;
+}
+
+/**--MAIN OTROS--*/
+
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0;
+}
+
+.subtitulo {
+    text-align: center;
+    font-weight: 700;
+    color: #9f8ad0;
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
+.gallery {
+    background: #f2f2f2;
+}
+
+.contenedor-galeria{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.img-galeria {
+    object-fit: cover;
+    width: 30%;
+    display: block;
+    margin-bottom: 15px;
+    box-shadow: 0 0 6px rgb(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.img-galeria:hover{
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.1);
+}
+
+.imagen-light{
+    position: fixed;
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(100%);
+    transition: transform .2s ease-in-out;
+}
+
+.show{
+    transform: translate(0);
+}
+
+.agregar-imagen {
+    object-fit: cover;
+    width: 60%;
+    border-radius: 10px;
+    transform: scale(0);
+    transition: transform .3s .2s;
+}
+
+.showImage{
+    transform: scale(1);
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    cursor: pointer;
+    color:#fff;
+    font-size: 25px;
 }
 
 /*!---------- FOOTER---------- */
@@ -284,7 +374,9 @@ footer a img {
 
 /**---MEDIA QUERY----*/
 
-@media screen and (max-width:902px) {   /**---MEDIA QUERY cards----*/
+@media screen and (max-width:902px) {
+
+    /**---MEDIA QUERY cards----*/
     .flextitulo {
         /* titulo de seccion */
         color: rgb(4, 35, 29);
@@ -417,15 +509,15 @@ footer a img {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
-    
+
     footer div p {
         padding: 10px 0px 10px 0px;
     }
-    
+
     footer div {
         text-align: start;
     }
-    
+
     footer div a {
         text-decoration: none;
         color: white;
@@ -433,7 +525,7 @@ footer a img {
         /* Convertir en bloque */
         padding: 10px 0px 10px 0px;
     }
-    
+
     footer div a i {
         padding: 5px 5px 5px 0px;
     }

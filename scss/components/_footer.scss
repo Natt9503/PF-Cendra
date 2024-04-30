@@ -1,0 +1,54 @@
+footer {
+    background-color: rgb(4, 35, 29);
+    padding: 30px 10px;
+    color: white;
+    font-style: normal;
+    margin: auto;
+    /*para que se mantenga centrado*/
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    div {
+        text-align: start;
+
+        
+    }
+
+    div {
+        
+
+        p {
+            padding: 10px 0px 10px 0px;
+
+        }
+
+        
+    }
+
+    div {
+        
+
+        a {
+            text-decoration: none;
+            color: white;
+            display: block;
+            /* Convertir en bloque */
+            padding: 10px 0px 10px 0px;
+
+            i {
+                padding: 5px 5px 5px 0px;
+            }
+        }
+    }
+
+    .fixed {
+        /* para que el logo de wsp siempre este en el costado */
+        position: fixed;
+        bottom: 15px;
+        /*margen*/
+        right: 15px;
+
+        /*margen*/
+        
+    }
+}

@@ -1,0 +1,158 @@
+@media screen and (max-width:902px) {   /**---MEDIA QUERY cards----*/
+    .flextitulo {
+        /* titulo de seccion */
+        color: rgb(4, 35, 29);
+        font-family: 'roboto';
+        font: bold 300%;
+        margin: 10px;
+        padding: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        /* Permite que los elementos hijos se envuelvan */
+    }
+
+    .flextitulo h4 a {
+        text-decoration: none;
+        color: rgb(4, 35, 29);
+        margin: 5px;
+        font-size: medium;
+    }
+
+    .flexcardpadre {
+        /* contenedor de las cards */
+        display: flex;
+        /* Asegura que los elementos .flexcardhijo estén uno al lado del otro */
+        justify-content: space-between;
+        /* Distribuye los elementos horizontalmente */
+        flex-wrap: wrap;
+        /* Permite que los elementos se envuelvan cuando no haya suficiente espacio */
+        flex-direction: column;
+    }
+
+    .flexcardhijo img {
+        margin-bottom: 5px;
+        border-radius: 10px 10px 0px 0px;
+        width: 100%;
+        /* Establece el ancho al 100% del contenedor */
+        height: auto;
+        /* Permite que la altura se ajuste automáticamente para mantener la proporción */
+    }
+
+    .flexcardhijo {
+        /* cards individuales */
+        border: 2px rgba(4, 35, 29, 0.63) solid;
+        border-radius: 10px;
+        max-width: 400px;
+        /* un ancho máximo */
+        text-align: center;
+        margin: 20px;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+        /* sombra */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flexcardhijo p {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width:580px) {
+    .flextitulo {
+        /* titulo de seccion */
+        color: rgb(4, 35, 29);
+        font-family: 'roboto';
+        font: bold 300%;
+        margin: 10px;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        flex-wrap: wrap;
+        /* Permite que los elementos hijos se envuelvan */
+    }
+
+    .flextitulo h4 a {
+        text-decoration: none;
+        color: rgb(4, 35, 29);
+        margin: 5px;
+        font-size: medium;
+
+    }
+
+    .flexcardpadre {
+        /* contenedor de las cards */
+        display: flex;
+        /* Asegura que los elementos .flexcardhijo estén uno al lado del otro */
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* Permite que los elementos se envuelvan cuando no haya suficiente espacio */
+    }
+
+    .flexcardhijo img {
+        margin-bottom: 5px;
+        border-radius: 10px 10px 0px 0px;
+        width: 100%;
+        /* Establece el ancho al 100% del contenedor */
+        height: auto;
+        /* Permite que la altura se ajuste automáticamente para mantener la proporción */
+    }
+
+    .flexcardhijo {
+        border: 2px rgba(4, 35, 29, 0.63) solid;
+        border-radius: 10px;
+        max-width: 400px;
+        /* un ancho máximo */
+        text-align: center;
+        margin: 20px;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+        /* sombra */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .flexcardhijo p {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width:785px) {
+    footer {
+        background-color: rgb(4, 35, 29);
+        padding: 30px 30px;
+        color: white;
+        font-style: normal;
+        margin: auto;
+        /*para que se mantenga centrado*/
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    footer div p {
+        padding: 10px 0px 10px 0px;
+    }
+    
+    footer div {
+        text-align: start;
+    }
+    
+    footer div a {
+        text-decoration: none;
+        color: white;
+        display: block;
+        /* Convertir en bloque */
+        padding: 10px 0px 10px 0px;
+    }
+    
+    footer div a i {
+        padding: 5px 5px 5px 0px;
+    }
+
+    footer div h3 {
+        padding: 30px 0px 0px 0px;
+    }
+}

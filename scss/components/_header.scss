@@ -1,0 +1,15 @@
+.social { //*!ESTO EN DONDE DEBERIA PONERLO?*/
+    position: fixed;
+    top: 450px;
+    display: flex;
+    flex-direction: column;
+
+    .redes {
+        /*!redes en vertical*/
+        width: 35px;
+        height: 35px;
+        border-radius: 10px;
+        margin: 10px 20px 10px 10px;
+
+    }
+}
