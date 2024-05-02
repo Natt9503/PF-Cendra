@@ -69,13 +69,20 @@
   font-family: 'roboto'; }
 
 .navbar-color {
-  background-color: #04231d; }
+  background-color: #04231d;
+  padding: 30px; }
 
 .nav-link {
   color: white; }
 
 .custom-link {
-  color: #218a76 !important; }
+  color: #86b8ae !important; }
+
+/* para que no se cambie la tipografia cuando esta activo */
+.navbar-nav .nav-item .nav-link.active {
+  font-family: "Roboto", sans-serif !important;
+  font-weight: 500;
+  font-style: normal; }
 
 .social {
   position: fixed;
@@ -98,6 +105,7 @@ main div section video {
 main div .flextitulo {
   /* titulo de seccion */
   color: #04231d;
+  /*variable*/
   font-family: 'roboto';
   font: bold 300%;
   margin: 10px;
@@ -113,18 +121,19 @@ main div .flextitulo {
   main div .flextitulo h4 a {
     text-decoration: none;
     color: #04231d;
+    /*variable*/
     margin: 5px; }
 
 main div .flexcardpadre {
   /* contenedor de las cards */
   display: flex;
   /* Asegura que los elementos .flexcardhijo estén uno al lado del otro */
-  justify-content: space-between;
+  justify-content: space-evenly;
   /* Distribuye los elementos horizontalmente */
   flex-wrap: wrap;
   /* Permite que los elementos se envuelvan cuando no haya suficiente espacio */ }
   main div .flexcardpadre .flexcardhijo {
-    border: 2px rgba(4, 35, 29, 0.63) solid;
+    border: 2px #04231da1 solid;
     border-radius: 10px;
     max-width: 400px;
     /* un ancho máximo */
@@ -148,7 +157,8 @@ main div .flexcardpadre {
 
 footer {
   background-color: #04231d;
-  padding: 30px 10px;
+  /*variable*/
+  padding: 50px 100px 50px 100px;
   color: white;
   font-style: normal;
   margin: auto;
@@ -176,7 +186,6 @@ footer {
     /*margen*/ }
 
 @media screen and (max-width: 902px) {
-  /**---MEDIA QUERY cards----*/
   .flextitulo {
     /* titulo de seccion */
     color: #04231d;
@@ -186,14 +195,15 @@ footer {
     padding: 30px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-self: flex-end;
     flex-wrap: wrap;
     /* Permite que los elementos hijos se envuelvan */ }
   .flextitulo h4 a {
     text-decoration: none;
     color: #04231d;
     margin: 5px;
-    font-size: medium; }
+    font-size: medium;
+    align-self: flex-end; }
   .flexcardpadre {
     /* contenedor de las cards */
     display: flex;
@@ -235,9 +245,9 @@ footer {
     padding: 30px;
     display: flex;
     flex-direction: column;
-    align-items: start;
     flex-wrap: wrap;
-    /* Permite que los elementos hijos se envuelvan */ }
+    /* Permite que los elementos hijos se envuelvan */
+    align-self: flex-end; }
   .flextitulo h4 a {
     text-decoration: none;
     color: #04231d;

@@ -83,8 +83,11 @@
     font-family: 'roboto';
 }
 
+//* header de bootstrap */
+
 .navbar-color {
     background-color: rgb(4, 35, 29);
+    padding: 30px;
 }
 
 .nav-link {
@@ -92,5 +95,43 @@
 }
 
 .custom-link {
-    color: rgb(33, 138, 118) !important;
+    color: rgb(134, 184, 174) !important;
 }
+
+/* para que no se cambie la tipografia cuando esta activo */
+.navbar-nav .nav-item .nav-link.active {
+    font-family: "Roboto", sans-serif !important;
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+//* redes que estan en el costado vertical */
+
+.social { //*!ESTO EN DONDE DEBERIA PONERLO?*/
+    position: fixed;
+    top: 450px;
+    display: flex;
+    flex-direction: column;
+
+    .redes {
+        /*!redes en vertical*/
+        width: 35px;
+        height: 35px;
+        border-radius: 10px;
+        margin: 10px 20px 10px 10px;
+    }
+}
+
+
+
+
+
+//!variables
+
+$color-principal: #04231d; 
+$color-secundario: #218a76;
+$color-terciario: rgba(0, 0, 0, 0.2);
+
+//!listas
+
