@@ -150,6 +150,16 @@ main div .flexcardpadre {
       height: auto; }
     main div .flexcardpadre .flexcardhijo p {
       padding: 10px; }
+    main div .flexcardpadre .flexcardhijo .tag-container {
+      margin-top: 10px;
+      padding-bottom: 10px; }
+      main div .flexcardpadre .flexcardhijo .tag-container .tag {
+        display: inline-block;
+        background-color: #18330d;
+        color: #ffffff;
+        padding: 5px 10px;
+        border-radius: 20px;
+        margin-right: 10px; }
 
 main div .flextituloproyecto {
   color: #04231d;
