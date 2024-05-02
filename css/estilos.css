@@ -66,7 +66,7 @@
   box-sizing: border-box; }
 
 * {
-  font-family: 'roboto'; }
+  font-family: 'roboto' !important; }
 
 .navbar-color {
   background-color: #04231d;
@@ -99,7 +99,7 @@
 main div section video {
   width: 100%;
   /* Ajusta el ancho de la imagen */
-  height: 600%;
+  height: auto;
   /* Ajusta el alto de la imagen */ }
 
 main div .flextitulo {
@@ -107,7 +107,7 @@ main div .flextitulo {
   color: #04231d;
   /*variable*/
   font-family: 'roboto';
-  font: bold 300%;
+  font-weight: bold;
   margin: 10px;
   padding: 30px;
   display: flex;
@@ -125,22 +125,20 @@ main div .flextitulo {
     margin: 5px; }
 
 main div .flexcardpadre {
-  /* contenedor de las cards */
+  /* Estilos para el contenedor de las tarjetas */
   display: flex;
-  /* Asegura que los elementos .flexcardhijo estén uno al lado del otro */
   justify-content: space-evenly;
-  /* Distribuye los elementos horizontalmente */
   flex-wrap: wrap;
-  /* Permite que los elementos se envuelvan cuando no haya suficiente espacio */ }
+  /* Estilos para las tarjetas */ }
   main div .flexcardpadre .flexcardhijo {
+    /* Estilos generales de las tarjetas */
     border: 2px #04231da1 solid;
     border-radius: 10px;
     max-width: 400px;
-    /* un ancho máximo */
+    max-height: 600px;
     text-align: center;
     margin: 20px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    /* sombra */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -149,11 +147,87 @@ main div .flexcardpadre {
       margin-bottom: 5px;
       border-radius: 10px 10px 0px 0px;
       width: 100%;
-      /* Establece el ancho al 100% del contenedor */
-      height: auto;
-      /* Permite que la altura se ajuste automáticamente para mantener la proporción */ }
+      height: auto; }
     main div .flexcardpadre .flexcardhijo p {
       padding: 10px; }
+
+main div .flextituloproyecto {
+  color: #04231d;
+  margin: 0 30px 20px 30px;
+  padding: 20px;
+  /* Espaciado interno */
+  border-radius: 10px;
+  text-align: center;
+  max-width: 1000px;
+  /* Ancho máximo */
+  margin-left: auto;
+  /* Margen izquierdo automático */
+  margin-right: auto;
+  /* Margen derecho automático */ }
+
+main div .flexproyecto {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  /* Espacio entre las cards */
+  margin: 30px; }
+  main div .flexproyecto .card {
+    background-color: #fff;
+    /* Color de fondo de la card */
+    border-radius: 10px;
+    /* Borde redondeado */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Sombra */
+    padding: 20px;
+    /* Espaciado interno */
+    width: calc(33.33% - 20px);
+    /* Ancho de la card, calculado para que haya 3 cards por fila */
+    /* Ajusta el ancho según la resolución de la pantalla */ }
+    @media (max-width: 768px) {
+      main div .flexproyecto .card {
+        width: calc(50% - 20px);
+        /* Ancho de la card */ } }
+    @media (max-width: 480px) {
+      main div .flexproyecto .card {
+        width: 100%;
+        /* Ancho de la card */ } }
+    main div .flexproyecto .card img {
+      width: 100%;
+      /* Imagen ocupa todo el ancho de la card */
+      border-radius: 10px;
+      /* Borde redondeado */ }
+    main div .flexproyecto .card h5 {
+      margin-top: 10px;
+      /* Espaciado superior para el título */ }
+    main div .flexproyecto .card p {
+      margin-top: 10px;
+      /* Espaciado superior para el párrafo */ }
+
+main section .contenedor-otro {
+  width: 90%;
+  max-width: 1200px;
+  overflow: hidden;
+  margin: auto;
+  padding: 60px 0; }
+  main section .contenedor-otro h2 {
+    text-align: center;
+    font-weight: 700;
+    color: #04231d;
+    margin-bottom: 40px;
+    font-size: 40px; }
+  main section .contenedor-otro .contenedor-galeria-otro {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap; }
+    main section .contenedor-otro .contenedor-galeria-otro .img-galeria-otro {
+      object-fit: cover;
+      width: 30%;
+      margin-bottom: 15px;
+      box-shadow: 0 0 6px rgba(17, 17, 17, 0.5);
+      cursor: pointer; }
+      main section .contenedor-otro .contenedor-galeria-otro .img-galeria-otro:hover {
+        transition: all 0.3s ease-in-out;
+        transform: scale(1.1); }
 
 footer {
   background-color: #04231d;
@@ -166,6 +240,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr); }
   footer div {
+    /*logo*/
     text-align: start; }
   footer div p {
     padding: 10px 0px 10px 0px; }

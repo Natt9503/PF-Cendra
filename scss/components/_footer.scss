@@ -10,25 +10,17 @@ footer {
     grid-template-columns: repeat(3, 1fr);
 
     div {
+        /*logo*/
         text-align: start;
-
-
     }
 
     div {
-
-
         p {
             padding: 10px 0px 10px 0px;
-
         }
-
-
     }
 
     div {
-
-
         a {
             text-decoration: none;
             color: white;
@@ -48,8 +40,6 @@ footer {
         bottom: 15px;
         /*margen*/
         right: 15px;
-
         /*margen*/
-
     }
 }
