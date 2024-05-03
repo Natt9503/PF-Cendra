@@ -9,6 +9,7 @@
     <!-- <link rel="stylesheet" href="../css/style.css"> -->
     <link rel="stylesheet" href="../css/estilos.css"> <!--!link de sass-->
     <title>Contacto</title>
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -41,7 +42,8 @@
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="¿Que buscas?" aria-label="¿Que buscas?">
+                        <input class="form-control me-2" type="search" placeholder="¿Que buscas?"
+                            aria-label="¿Que buscas?">
                         <button class="btn btn-outline-success" type="submit">Search</button>
                     </form>
                 </div>
@@ -50,37 +52,63 @@
     </header>
 
     <main>
-        <div class="container">
+        <div class="containerform">
             <h1>Vamos a trabajar juntos</h1>
-            <h2>Me encantaria saber de vos, contame</h2>
+            <h2>Me encantaría saber de vos, contame</h2>
 
-            <div id="feedback"></div>
+            <div class="feedback"></div>
 
-            <form method="post" id="contact-form">
+            <form method="post" class="contact-form">
                 <div class="form-group">
                     <label>Nombre: *</label>
-                    <input type="text" class="form-control" id="form-name" placeholder="Name">
+                    <input type="text" class="form-control form-name" placeholder="Nombre">
                 </div>
                 <div class="form-group">
                     <label>Email: *</label>
-                    <input type="text" class="form-control" id="form-email" placeholder="Email">
+                    <input type="text" class="form-control form-email" placeholder="Email">
                 </div>
                 <div class="form-group">
                     <label>Celu:</label>
-                    <input type="text" class="form-control" id="form-phone" placeholder="Phone">
+                    <input type="text" class="form-control form-phone" placeholder="Teléfono">
                 </div>
                 <div class="form-group">
-                    <label>Mensaje:</label>
-                    <textarea type="text" class="form-control" id="form-message" placeholder="Message"></textarea>
+                    <label>Servicio:</label>
+                    <div class="service-chips">
+                        <label>
+                            <input type="checkbox" class="form-service" value="diseño">
+                            Diseño
+                        </label>
+                        <label>
+                            <input type="checkbox" class="form-service" value="fotografía">
+                            Fotografía
+                        </label>
+                        <label>
+                            <input type="checkbox" class="form-service" value="desarrollo_web">
+                            Desarrollo Web
+                        </label>
+                        <!-- Agrega más etiquetas según los servicios que ofreces -->
+                    </div>
                 </div>
-                <button type="submit" class="btn btn-default">
+
+                <div class="form-group">
+                    <label>Mensaje:</label>
+                    <textarea type="text" class="form-control form-message" placeholder="Mensaje"></textarea>
+                </div>
+
+                <imput type="submit" class="btn btn-enviar">
                     Enviar mensaje
-                </button>
+                </imput>
+
             </form>
-            
+
         </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2124.991632397106!2d-58.396826300923244!3d-34.77611524320405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd2e6e7411ea3%3A0xe6f641af55d79837!2sAv.%20Meeks%201141%2C%20B1834GBE%20Temperley%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1714625098349!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2124.991632397106!2d-58.396826300923244!3d-34.77611524320405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd2e6e7411ea3%3A0xe6f641af55d79837!2sAv.%20Meeks%201141%2C%20B1834GBE%20Temperley%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1714625098349!5m2!1ses-419!2sar"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
     </main>
+
+
 
     <footer>
         <div>

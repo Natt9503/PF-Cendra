@@ -99,7 +99,7 @@
 main div section video {
   width: 100%;
   /* Ajusta el ancho de la imagen */
-  height: auto;
+  height: 600%;
   /* Ajusta el alto de la imagen */ }
 
 main div .flextitulo {
@@ -238,6 +238,69 @@ main section .contenedor-otro {
       main section .contenedor-otro .contenedor-galeria-otro .img-galeria-otro:hover {
         transition: all 0.3s ease-in-out;
         transform: scale(1.1); }
+
+main {
+  margin: 10px;
+  padding: 55px;
+  color: #04231d; }
+  main .containerform {
+    width: 900px;
+    display: flex;
+    flex-wrap: wrap; }
+    main .containerform .feedback {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+    main .containerform .contact-form {
+      width: 80%;
+      /* Ajusta el ancho del formulario */
+      padding-bottom: 30px;
+      /* Espacio entre formulario y mapa */ }
+      main .containerform .contact-form .form-group {
+        margin: 15px 0px 15px 0px; }
+        main .containerform .contact-form .form-group .service-chips {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 10px;
+          /* Espacio entre los chips */ }
+        main .containerform .contact-form .form-group .service-chips label {
+          display: inline-block;
+          padding: 8px 16px;
+          border: 1px solid #ccc;
+          border-radius: 20px;
+          cursor: pointer; }
+        main .containerform .contact-form .form-group .service-chips input[type="checkbox"] {
+          display: none;
+          /* Oculta los checkboxes */ }
+        main .containerform .contact-form .form-group .service-chips input[type="checkbox"]:checked + label {
+          background-color: #04231d;
+          /* Color de fondo cuando se selecciona */
+          color: #185510;
+          /* Color del texto cuando se selecciona */ }
+      main .containerform .contact-form .btn-enviar {
+        background-color: #04231d;
+        /* Color de fondo del botón */
+        color: #fff;
+        /* Color del texto del botón */
+        padding: 10px 20px;
+        /* Ajusta el espacio interno del botón */
+        margin-top: 20px;
+        /* Ajusta el espacio externo del boton */
+        border-radius: 5px;
+        /* Añade bordes redondeados al botón */
+        cursor: pointer;
+        /* Cambia el cursor al pasar sobre el botón */ }
+      main .containerform .contact-form .btn-enviar:hover {
+        background-color: #1e4707;
+        /* Cambia el color de fondo al pasar sobre el botón */ }
+  main iframe {
+    width: 40%;
+    /* Ajusta el ancho del mapa */
+    height: 450px;
+    /* Ajusta la altura del mapa */
+    border: none;
+    margin-top: 10px;
+    /* Espacio superior del mapa */ }
 
 footer {
   background-color: #04231d;
