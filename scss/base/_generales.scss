@@ -124,9 +124,6 @@
 }
 
 
-
-
-
 //!variables
 
 $color-principal: #04231d; 
@@ -134,4 +131,25 @@ $color-secundario: #218a76;
 $color-terciario: rgba(0, 0, 0, 0.2);
 
 //!listas
+
+$font-sizes: (
+    14px, // tamaño de fuente para párrafos
+    16px, // tamaño de fuente para enlaces
+    18px  // tamaño de fuente para otros elementos
+);
+
+//!mixins
+
+@mixin text ($normal, $white, $none){/*!grupo variable*/
+    font-style: $normal;
+    color: $white;
+    text-decoration: $none;
+}
+
+//!extends
+/*!grupo de propiedades siempre iguales*/
+%flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
 

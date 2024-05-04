@@ -20,10 +20,9 @@ main {
             font-weight: bold;
             margin: 10px;
             padding: 30px;
-            display: flex;
+            @extend %flex-wrap;
             justify-content: space-between;
             align-items: center;
-            flex-wrap: wrap;
 
             /* Permite que los elementos hijos se envuelvan */
             h2 {
@@ -43,9 +42,8 @@ main {
 
         .flexcardpadre {
             /* Estilos para el contenedor de las tarjetas */
-            display: flex;
+            @extend %flex-wrap;
             justify-content: space-evenly;
-            flex-wrap: wrap;
 
             /* Estilos para las tarjetas */
             .flexcardhijo {
@@ -111,8 +109,7 @@ main {
         }
 
         .flexproyecto {
-            display: flex;
-            flex-wrap: wrap;
+            @extend %flex-wrap;
             gap: 20px;
             /* Espacio entre las cards */
             margin: 30px;
@@ -180,9 +177,8 @@ main {
             }
 
             .contenedor-galeria-otro {
-                display: flex;
+                @extend %flex-wrap;
                 justify-content: space-evenly;
-                flex-wrap: wrap;
 
                 .img-galeria-otro {
                     object-fit: cover;
@@ -209,8 +205,7 @@ main {
 
     .containerform {
         width: 900px;
-        display: flex;
-        flex-wrap: wrap;
+        @extend %flex-wrap;
 
         .feedback {
             display: flex;
@@ -228,8 +223,7 @@ main {
                 margin: 15px 0px 15px 0px;
 
                 .service-chips {
-                    display: flex;
-                    flex-wrap: wrap;
+                    @extend %flex-wrap;;
                     gap: 10px;
                     /* Espacio entre los chips */
                 }

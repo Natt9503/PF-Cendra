@@ -96,6 +96,11 @@
     border-radius: 10px;
     margin: 10px 20px 10px 10px; }
 
+/*!grupo de propiedades siempre iguales*/
+main div .flextitulo, main div .flexcardpadre, main div .flexproyecto, main section .contenedor-otro .contenedor-galeria-otro, main .containerform, main .containerform .contact-form .form-group .service-chips {
+  display: flex;
+  flex-wrap: wrap; }
+
 main div section video {
   width: 100%;
   /* Ajusta el ancho de la imagen */
@@ -110,10 +115,8 @@ main div .flextitulo {
   font-weight: bold;
   margin: 10px;
   padding: 30px;
-  display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
   /* Permite que los elementos hijos se envuelvan */ }
   main div .flextitulo h2 {
     font-size: 40px;
@@ -126,9 +129,7 @@ main div .flextitulo {
 
 main div .flexcardpadre {
   /* Estilos para el contenedor de las tarjetas */
-  display: flex;
   justify-content: space-evenly;
-  flex-wrap: wrap;
   /* Estilos para las tarjetas */ }
   main div .flexcardpadre .flexcardhijo {
     /* Estilos generales de las tarjetas */
@@ -176,8 +177,6 @@ main div .flextituloproyecto {
   /* Margen derecho automático */ }
 
 main div .flexproyecto {
-  display: flex;
-  flex-wrap: wrap;
   gap: 20px;
   /* Espacio entre las cards */
   margin: 30px; }
@@ -226,9 +225,7 @@ main section .contenedor-otro {
     margin-bottom: 40px;
     font-size: 40px; }
   main section .contenedor-otro .contenedor-galeria-otro {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap; }
+    justify-content: space-evenly; }
     main section .contenedor-otro .contenedor-galeria-otro .img-galeria-otro {
       object-fit: cover;
       width: 30%;
@@ -244,9 +241,7 @@ main {
   padding: 55px;
   color: #04231d; }
   main .containerform {
-    width: 900px;
-    display: flex;
-    flex-wrap: wrap; }
+    width: 900px; }
     main .containerform .feedback {
       display: flex;
       justify-content: space-between;
@@ -259,8 +254,6 @@ main {
       main .containerform .contact-form .form-group {
         margin: 15px 0px 15px 0px; }
         main .containerform .contact-form .form-group .service-chips {
-          display: flex;
-          flex-wrap: wrap;
           gap: 10px;
           /* Espacio entre los chips */ }
         main .containerform .contact-form .form-group .service-chips label {
@@ -318,8 +311,10 @@ footer {
   footer div p {
     padding: 10px 0px 10px 0px; }
   footer div a {
-    text-decoration: none;
+    /*!grupo variable*/
+    font-style: normal;
     color: white;
+    text-decoration: none;
     display: block;
     /* Convertir en bloque */
     padding: 10px 0px 10px 0px; }

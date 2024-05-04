@@ -17,13 +17,12 @@ footer {
     div {
         p {
             padding: 10px 0px 10px 0px;
-        }
+            }
     }
 
     div {
         a {
-            text-decoration: none;
-            color: white;
+            @include text(normal, white, none);     
             display: block;
             /* Convertir en bloque */
             padding: 10px 0px 10px 0px;
