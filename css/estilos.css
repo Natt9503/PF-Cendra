@@ -76,7 +76,8 @@
   color: white; }
 
 .custom-link {
-  color: #86b8ae !important; }
+  /* color activo */
+  color: #FFD101 !important; }
 
 /* para que no se cambie la tipografia cuando esta activo */
 .navbar-nav .nav-item .nav-link.active {
@@ -84,11 +85,26 @@
   font-weight: 500;
   font-style: normal; }
 
+/* fondo para todos los botones en estado de hover */
+.navbar-color .btn-outline-success:hover {
+  background-color: #FFD101;
+  /* Cambia el color de fondo al hacer hover */ }
+
+/*  texto y borde */
+.navbar-color .btn-outline-success:hover {
+  color: #fff;
+  border-color: #FFD101; }
+
+/* color de fondo para todos los enlaces del menú en estado de hover */
+.navbar-color .nav-link:hover {
+  color: #FFD101; }
+
 .social {
   position: fixed;
   top: 450px;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  z-index: 10; }
   .social .redes {
     /*!redes en vertical*/
     width: 35px;
@@ -97,7 +113,7 @@
     margin: 10px 20px 10px 10px; }
 
 /*!grupo de propiedades siempre iguales*/
-main div .flextitulo, main div .flexcardpadre, main div .flexproyecto, main section .contenedor-otro .contenedor-galeria-otro, main .containerform, main .containerform .contact-form .form-group .service-chips {
+main .cardsindex .flextitulo, main .cardsindex .flexcardpadre, main div .flexproyecto, main section .contenedor-otro .contenedor-galeria-otro, .maincontacto .containerform, .maincontacto .containerform .contact-form .form-group .service-chips {
   display: flex;
   flex-wrap: wrap; }
 
@@ -107,60 +123,64 @@ main div section video {
   height: 600%;
   /* Ajusta el alto de la imagen */ }
 
-main div .flextitulo {
-  /* titulo de seccion */
-  color: #04231d;
-  /*variable*/
-  font-family: 'roboto';
-  font-weight: bold;
-  margin: 10px;
-  padding: 30px;
-  justify-content: space-between;
-  align-items: center;
-  /* Permite que los elementos hijos se envuelvan */ }
-  main div .flextitulo h2 {
-    font-size: 40px;
-    font-weight: bold; }
-  main div .flextitulo h4 a {
-    text-decoration: none;
+main .cardsindex {
+  padding: 50px; }
+  main .cardsindex .flextitulo {
+    /* titulo de seccion */
     color: #04231d;
     /*variable*/
-    margin: 5px; }
-
-main div .flexcardpadre {
-  /* Estilos para el contenedor de las tarjetas */
-  justify-content: space-evenly;
-  /* Estilos para las tarjetas */ }
-  main div .flexcardpadre .flexcardhijo {
-    /* Estilos generales de las tarjetas */
-    border: 2px #04231da1 solid;
-    border-radius: 10px;
-    max-width: 400px;
-    max-height: 600px;
-    text-align: center;
-    margin: 20px;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: column;
+    font-family: 'roboto';
+    font-weight: bold;
+    margin: 10px;
+    padding: 10px;
     justify-content: space-between;
-    align-items: center; }
-    main div .flexcardpadre .flexcardhijo img {
-      margin-bottom: 5px;
-      border-radius: 10px 10px 0px 0px;
-      width: 100%;
-      height: auto; }
-    main div .flexcardpadre .flexcardhijo p {
-      padding: 10px; }
-    main div .flexcardpadre .flexcardhijo .tag-container {
-      margin-top: 10px;
-      padding-bottom: 10px; }
-      main div .flexcardpadre .flexcardhijo .tag-container .tag {
-        display: inline-block;
-        background-color: #18330d;
-        color: #ffffff;
-        padding: 5px 10px;
-        border-radius: 20px;
-        margin-right: 10px; }
+    align-items: center;
+    /* Permite que los elementos hijos se envuelvan */ }
+    main .cardsindex .flextitulo h2 {
+      font-size: 40px;
+      font-weight: bold; }
+    main .cardsindex .flextitulo h4 a {
+      text-decoration: none;
+      color: #04231d;
+      /*variable*/
+      margin: 5px; }
+  main .cardsindex .flexcardpadre {
+    /* Estilos para el contenedor de las tarjetas */
+    justify-content: space-between;
+    /* Estilos para las tarjetas */ }
+    main .cardsindex .flexcardpadre .flexcardhijo {
+      /* Estilos generales de las tarjetas */
+      border: 2px #04231da1 solid;
+      border-radius: 10px;
+      width: 500px;
+      height: 600px;
+      text-align: center;
+      margin: 20px;
+      box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center; }
+      main .cardsindex .flexcardpadre .flexcardhijo img {
+        border-radius: 10px 10px 0px 0px;
+        width: 100%;
+        height: auto; }
+      main .cardsindex .flexcardpadre .flexcardhijo a {
+        text-decoration: none;
+        color: #04231d; }
+      main .cardsindex .flexcardpadre .flexcardhijo h5 {
+        margin: 5px; }
+      main .cardsindex .flexcardpadre .flexcardhijo p {
+        margin: 10px; }
+      main .cardsindex .flexcardpadre .flexcardhijo .tag-container {
+        padding: 10px; }
+        main .cardsindex .flexcardpadre .flexcardhijo .tag-container .tag {
+          display: inline-block;
+          background-color: #18330d;
+          color: #ffffff;
+          padding: 13px;
+          border-radius: 20px;
+          margin: 10px; }
 
 main div .flextituloproyecto {
   color: #04231d;
@@ -190,6 +210,8 @@ main div .flexproyecto {
     padding: 20px;
     /* Espaciado interno */
     width: calc(33.33% - 20px);
+    text-decoration: none;
+    color: #04231d;
     /* Ancho de la card, calculado para que haya 3 cards por fila */
     /* Ajusta el ancho según la resolución de la pantalla */ }
     @media (max-width: 768px) {
@@ -224,6 +246,8 @@ main section .contenedor-otro {
     color: #04231d;
     margin-bottom: 40px;
     font-size: 40px; }
+  main section .contenedor-otro p {
+    text-align: center; }
   main section .contenedor-otro .contenedor-galeria-otro {
     justify-content: space-evenly; }
     main section .contenedor-otro .contenedor-galeria-otro .img-galeria-otro {
@@ -236,41 +260,42 @@ main section .contenedor-otro {
         transition: all 0.3s ease-in-out;
         transform: scale(1.1); }
 
-main {
+.maincontacto {
   margin: 10px;
   padding: 55px;
-  color: #04231d; }
-  main .containerform {
-    width: 900px; }
-    main .containerform .feedback {
+  color: #04231d;
+  display: flex;
+  /* Para usar flexbox y dividir horizontalmente */
+  justify-content: space-between;
+  /* Para distribuir los elementos en los extremos */
+  height: 100vh;
+  /* ocupa toda la altura de la ventana */ }
+  .maincontacto .containerform {
+    width: 45%;
+    /* El formulario ocupa la mitad del ancho de la ventana */
+    background-color: #fff; }
+    .maincontacto .containerform .feedback {
       display: flex;
       justify-content: space-between;
       align-items: center; }
-    main .containerform .contact-form {
-      width: 80%;
+    .maincontacto .containerform .contact-form {
+      width: 100%;
+      /* Ajusta el ancho del formulario al 100% */
       /* Ajusta el ancho del formulario */
       padding-bottom: 30px;
       /* Espacio entre formulario y mapa */ }
-      main .containerform .contact-form .form-group {
+      .maincontacto .containerform .contact-form .form-group {
         margin: 15px 0px 15px 0px; }
-        main .containerform .contact-form .form-group .service-chips {
+        .maincontacto .containerform .contact-form .form-group .service-chips {
           gap: 10px;
           /* Espacio entre los chips */ }
-        main .containerform .contact-form .form-group .service-chips label {
+        .maincontacto .containerform .contact-form .form-group .service-chips label {
           display: inline-block;
           padding: 8px 16px;
           border: 1px solid #ccc;
           border-radius: 20px;
           cursor: pointer; }
-        main .containerform .contact-form .form-group .service-chips input[type="checkbox"] {
-          display: none;
-          /* Oculta los checkboxes */ }
-        main .containerform .contact-form .form-group .service-chips input[type="checkbox"]:checked + label {
-          background-color: #04231d;
-          /* Color de fondo cuando se selecciona */
-          color: #185510;
-          /* Color del texto cuando se selecciona */ }
-      main .containerform .contact-form .btn-enviar {
+      .maincontacto .containerform .contact-form .btn-enviar {
         background-color: #04231d;
         /* Color de fondo del botón */
         color: #fff;
@@ -283,17 +308,45 @@ main {
         /* Añade bordes redondeados al botón */
         cursor: pointer;
         /* Cambia el cursor al pasar sobre el botón */ }
-      main .containerform .contact-form .btn-enviar:hover {
-        background-color: #1e4707;
+      .maincontacto .containerform .contact-form .btn-enviar:hover {
+        background-color: #FFD101;
         /* Cambia el color de fondo al pasar sobre el botón */ }
-  main iframe {
-    width: 40%;
-    /* Ajusta el ancho del mapa */
-    height: 450px;
+  .maincontacto iframe {
+    width: 45%;
+    /* Ancho del mapa */
+    height: 700px;
     /* Ajusta la altura del mapa */
     border: none;
     margin-top: 10px;
-    /* Espacio superior del mapa */ }
+    /* Espacio superior del mapa */
+    margin-left: auto;
+    /* Centra horizontalmente */
+    margin-right: auto;
+    /* Centra horizontalmente */ }
+
+.container {
+  margin: 10px; }
+  .container h1 {
+    text-align: center; }
+  .container .skills-section {
+    width: 300px;
+    margin: 0 auto; }
+    .container .skills-section ul {
+      list-style-type: none;
+      padding: 0; }
+      .container .skills-section ul li {
+        background-color: #f4f4f4;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 10px;
+        margin-bottom: 5px; }
+        .container .skills-section ul li .skill-name {
+          margin-bottom: 5px; }
+        .container .skills-section ul li .progress-bar {
+          /* barra de progreso */
+          background-color: #4caf50;
+          height: 20px;
+          border-radius: 5px; }
 
 footer {
   background-color: #04231d;

@@ -86,16 +86,16 @@
 //* header de bootstrap */
 
 .navbar-color {
-    background-color: rgb(4, 35, 29);
+    background-color: #04231d;
     padding: 30px;
 }
 
-.nav-link {
+.nav-link { 
     color: white;
 }
 
-.custom-link {
-    color: rgb(134, 184, 174) !important;
+.custom-link { /* color activo */
+    color: #FFD101 !important;
 }
 
 /* para que no se cambie la tipografia cuando esta activo */
@@ -103,6 +103,22 @@
     font-family: "Roboto", sans-serif !important;
     font-weight: 500;
     font-style: normal;
+}
+
+/* fondo para todos los botones en estado de hover */
+.navbar-color .btn-outline-success:hover {
+    background-color: #FFD101; /* Cambia el color de fondo al hacer hover */
+}
+
+/*  texto y borde */
+.navbar-color .btn-outline-success:hover {
+    color: #fff; 
+    border-color: #FFD101; 
+}
+
+/* color de fondo para todos los enlaces del menú en estado de hover */
+.navbar-color .nav-link:hover {
+    color: #FFD101; 
 }
 
 
@@ -113,6 +129,7 @@
     top: 450px;
     display: flex;
     flex-direction: column;
+    z-index: 10;
 
     .redes {
         /*!redes en vertical*/
@@ -127,7 +144,7 @@
 //!variables
 
 $color-principal: #04231d; 
-$color-secundario: #218a76;
+$color-secundario: #FFD101;
 $color-terciario: rgba(0, 0, 0, 0.2);
 
 //!listas
