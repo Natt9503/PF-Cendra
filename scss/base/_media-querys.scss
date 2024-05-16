@@ -1,160 +1,246 @@
-@media screen and (max-width:902px) {   //!---MEDIA QUERY cards----*//
-    .flextitulo {
+@media screen and (max-width:902px) {
+
+    //!---MEDIA QUERY cards----*//
+    main .cardsindex .flextitulo {
         /* titulo de seccion */
-        color: rgb(4, 35, 29);
+        color: #04231d;
+        /*variable*/
         font-family: 'roboto';
-        font: bold 300%;
+        font-weight: bold;
         margin: 10px;
-        padding: 30px;
-        display: flex;
-        justify-content: space-between;
-        align-self: flex-end;
-        flex-wrap: wrap;
-        /* Permite que los elementos hijos se envuelvan */
-    }
-
-    .flextitulo h4 a {
-        text-decoration: none;
-        color: rgb(4, 35, 29);
-        margin: 5px;
-        font-size: medium;
-        align-self: flex-end;
-    }
-
-    .flexcardpadre {
-        /* contenedor de las cards */
-        display: flex;
-        /* Asegura que los elementos .flexcardhijo estén uno al lado del otro */
-        justify-content: space-between;
-        /* Distribuye los elementos horizontalmente */
-        flex-wrap: wrap;
-        /* Permite que los elementos se envuelvan cuando no haya suficiente espacio */
-        flex-direction: column;
-    }
-
-    .flexcardhijo img {
-        margin-bottom: 5px;
-        border-radius: 10px 10px 0px 0px;
-        width: 100%;
-        /* Establece el ancho al 100% del contenedor */
-        height: auto;
-        /* Permite que la altura se ajuste automáticamente para mantener la proporción */
-    }
-
-    .flexcardhijo {
-        /* cards individuales */
-        border: 2px rgba(4, 35, 29, 0.63) solid;
-        border-radius: 10px;
-        max-width: 400px;
-        /* un ancho máximo */
-        text-align: center;
-        margin: 20px;
-        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-        /* sombra */
-        display: flex;
-        flex-direction: column;
-    }
-
-    .flexcardhijo p {
         padding: 10px;
-    }
-}
-
-@media screen and (max-width:580px) {
-    .flextitulo {
-        /* titulo de seccion */
-        color: rgb(4, 35, 29);
-        font-family: 'roboto';
-        font: bold 300%;
-        margin: 10px;
-        padding: 30px;
         display: flex;
-        flex-direction: column;
-        
+        justify-content: center;
         flex-wrap: wrap;
-        /* Permite que los elementos hijos se envuelvan */
-        align-self: flex-end;
     }
 
-    .flextitulo h4 a {
+    main .cardsindex .flextitulo h4 a {
         text-decoration: none;
-        color: rgb(4, 35, 29);
-        margin: 5px;
-        font-size: medium;
-
+        color: #04231d;
+        /*variable*/
     }
 
-    .flexcardpadre {
-        /* contenedor de las cards */
-        display: flex;
-        /* Asegura que los elementos .flexcardhijo estén uno al lado del otro */
-        flex-direction: row;
-        flex-wrap: wrap;
-        /* Permite que los elementos se envuelvan cuando no haya suficiente espacio */
-    }
-
-    .flexcardhijo img {
-        margin-bottom: 5px;
-        border-radius: 10px 10px 0px 0px;
-        width: 100%;
-        /* Establece el ancho al 100% del contenedor */
-        height: auto;
-        /* Permite que la altura se ajuste automáticamente para mantener la proporción */
-    }
-
-    .flexcardhijo {
-        border: 2px rgba(4, 35, 29, 0.63) solid;
+    main .cardsindex .flexcardpadre .flexcardhijo {
+        border: 2px #04231da1 solid;
         border-radius: 10px;
-        max-width: 400px;
-        /* un ancho máximo */
+        width: 500px;
+        height: 600px;
         text-align: center;
-        margin: 20px;
+        margin: 10px;
         box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-        /* sombra */
         display: flex;
         flex-direction: column;
         align-items: center;
-
     }
 
-    .flexcardhijo p {
-        padding: 10px;
+    main .cardsindex .flexcardpadre .flexcardhijo img {
+        border-radius: 10px 10px 0px 0px;
+        width: 100%;
+        height: auto;
+    }
+
+    main .cardsindex .flexcardpadre .flexcardhijo p {
+        padding: 5px;
+    }
+
+    main .cardsindex .flexcardpadre .flexcardhijo .tag-container {
+        padding: 5px;
+    }
+
+    main .cardsindex .flexcardpadre .flexcardhijo .tag-container .tag {
+        display: inline-block;
+        background-color: #18330d;
+        color: #ffffff;
+        padding: 6px;
+        border-radius: 10px;
+        margin: 5px;
     }
 }
 
-@media screen and (max-width:785px) {
+
+@media screen and (max-width:580px) {
+    main .cardsindex {
+        padding: 20px;
+    }
+
+    main .cardsindex .flextitulo {
+        color: #04231d;
+        font-family: 'roboto';
+        font-weight: bold;
+        margin: 5px;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-self: center;
+    }
+
+    main .cardsindex .flextitulo h2 {
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    main .cardsindex .flexcardpadre .flexcardhijo {
+        border: 2px #04231da1 solid;
+        border-radius: 10px;
+        width: 500px;
+        height: 600px;
+        text-align: center;
+        margin: 10px;
+        /* espacio entre cada card */
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    main .cardsindex .flexcardpadre .flexcardhijo {
+        border: 2px #04231da1 solid;
+        border-radius: 10px;
+        width: 500px;
+        height: 600px;
+        text-align: center;
+        margin: 10px;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    main .cardsindex .flexcardpadre .flexcardhijo img {
+        border-radius: 10px 10px 0px 0px;
+        width: 100%;
+        height: auto;
+    }
+
+    main .cardsindex .flexcardpadre .flexcardhijo h5 {
+        margin: 5px;
+    }
+
+    main .cardsindex .flexcardpadre .flexcardhijo p {
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 785px) {
     footer {
-        background-color: rgb(4, 35, 29);
-        padding: 30px 30px;
+        background-color: #04231d;
+        padding: 30px;
         color: white;
         font-style: normal;
         margin: auto;
-        /*para que se mantenga centrado*/
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-    }
-    
-    footer div p {
-        padding: 10px 0px 10px 0px;
-    }
-    
-    footer div {
-        text-align: start;
-    }
-    
-    footer div a {
-        text-decoration: none;
-        color: white;
-        display: block;
-        /* Convertir en bloque */
-        padding: 10px 0px 10px 0px;
-    }
-    
-    footer div a i {
-        padding: 5px 5px 5px 0px;
+        display: flex;
+        flex-direction: column;
+
     }
 
+    .logo-container {
+        display: flex;
+        justify-content: center;
+        /* Centra el contenido horizontalmente */
+    }
+
+    .logofooter {
+        max-width: 100%;
+        /* Asegura que la imagen no supere el ancho del contenedor */
+        align-self: center;
+        /* Centra la imagen verticalmente */
+    }
+
+    footer div {
+        margin-left: 20px;
+    }
+
+
     footer div h3 {
-        padding: 30px 0px 0px 0px;
+        margin: 10px 0;
+    }
+
+    footer div p {
+        margin: 0px;
+    }
+
+    footer div a {
+
+        font-size: 0;
+        /* Asegura que el espacio del texto se elimine */
+        padding: 0;
+    }
+
+    footer div a i {
+        /* Ajusta el tamaño del icono si es necesario */
+        font-size: 20px;
+        /* Esto es solo un ejemplo, puedes ajustarlo según tu diseño */
+        margin-right: 5px;
+
+
+    }
+
+    footer div .social-icons {
+        display: flex;
+        justify-content: start;
+        /* Centra los iconos horizontalmente */
+        gap: 10px;
+        /* Ajusta el espacio entre los iconos */
+    }
+
+
+
+    .fixed {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+    }
+}
+
+
+
+
+
+
+
+//!**MAIN DE PROYECTOS**/
+
+/* Ancho de la card, calculado para que haya 3 cards por fila */
+/* Ajusta el ancho según la resolución de la pantalla */
+@media screen and (max-width: 768px) {
+    main div .flexproyecto .card {
+        width: calc(50% - 20px);
+        /* Ancho de la card */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    main div .flexproyecto .card {
+        width: 100%;
+        /* Ancho de la card */
+    }
+}
+
+//!**MAIN DE CONTACTO**/
+@media screen and (max-width: 1047px) {
+    .maincontacto {
+        flex-direction: column;
+    }
+
+    .maincontacto .containerform {
+        width: 100%;
+    }
+
+    .maincontacto iframe {
+        width: 100%;
+        height: 999px;
+    }
+}
+@media screen and (max-width: 609px){
+    .maincontacto{
+        padding: 20px;
+    }
+    .maincontacto iframe {
+        width: 300px;
+        height: 400px;
+        margin: 20px;
     }
 }

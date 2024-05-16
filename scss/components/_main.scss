@@ -56,7 +56,6 @@ main {
                 height: 600px;
                 text-align: center;
                 margin: 20px;
-
                 box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
                 display: flex;
                 flex-direction: column;
@@ -139,19 +138,6 @@ main {
                 color: $color-principal;
                 align-items: center;
 
-
-                /* Ancho de la card, calculado para que haya 3 cards por fila */
-                /* Ajusta el ancho según la resolución de la pantalla */
-                @media (max-width: 768px) {
-                    width: calc(50% - 20px);
-                    /* Ancho de la card */
-                }
-
-                @media (max-width: 480px) {
-                    width: 100%;
-                    /* Ancho de la card */
-                }
-
                 img {
                     width: 100%;
                     /* Imagen ocupa todo el ancho de la card */
@@ -169,6 +155,7 @@ main {
                     /* Espaciado superior para el párrafo */
                     text-align: center;
                 }
+
                 .tag-container {
                     padding: 5px;
                     text-align: center;
@@ -237,10 +224,10 @@ main {
     padding: 55px;
     color: $color-principal;
     display: flex;
-    /* Para usar flexbox y dividir horizontalmente */
     justify-content: space-between;
     /* Para distribuir los elementos en los extremos */
-    height: 100vh; /* ocupa toda la altura de la ventana */
+    height: 100vh;
+    /* ocupa toda la altura de la ventana */
 
 
 
@@ -304,22 +291,22 @@ main {
             }
         }
     }
-    
-        iframe {
-            width: 45%;
-            /* Ancho del mapa */
-            height: 700px;
-            /* Ajusta la altura del mapa */
-            border: none;
-            margin-top: 10px;
-            /* Espacio superior del mapa */
-            margin-left: auto;
-            /* Centra horizontalmente */
-            margin-right: auto;
-            /* Centra horizontalmente */
-        }
 
-    
+    iframe {
+        width: 45%;
+        /* Ancho del mapa */
+        height: 700px;
+        /* Ajusta la altura del mapa */
+        border: none;
+        margin-top: 10px;
+        /* Espacio superior del mapa */
+        margin-left: auto;
+        /* Centra horizontalmente */
+        margin-right: auto;
+        /* Centra horizontalmente */
+    }
+
+
 }
 
 
