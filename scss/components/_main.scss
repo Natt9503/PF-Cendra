@@ -137,6 +137,7 @@ main {
                 width: calc(33.33% - 20px);
                 text-decoration: none;
                 color: $color-principal;
+                align-items: center;
 
 
                 /* Ancho de la card, calculado para que haya 3 cards por fila */
@@ -166,6 +167,21 @@ main {
                 p {
                     margin-top: 10px;
                     /* Espaciado superior para el párrafo */
+                    text-align: center;
+                }
+                .tag-container {
+                    padding: 5px;
+                    text-align: center;
+
+                    .tag {
+                        display: inline-block;
+                        background-color: #18330d;
+                        color: #ffffff;
+                        padding: 9px;
+                        border-radius: 10px;
+                        margin: 5px;
+                        font-size: 70%;
+                    }
                 }
             }
         }

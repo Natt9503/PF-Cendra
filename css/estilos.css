@@ -212,6 +212,7 @@ main div .flexproyecto {
     width: calc(33.33% - 20px);
     text-decoration: none;
     color: #04231d;
+    align-items: center;
     /* Ancho de la card, calculado para que haya 3 cards por fila */
     /* Ajusta el ancho según la resolución de la pantalla */ }
     @media (max-width: 768px) {
@@ -232,7 +233,19 @@ main div .flexproyecto {
       /* Espaciado superior para el título */ }
     main div .flexproyecto .card p {
       margin-top: 10px;
-      /* Espaciado superior para el párrafo */ }
+      /* Espaciado superior para el párrafo */
+      text-align: center; }
+    main div .flexproyecto .card .tag-container {
+      padding: 5px;
+      text-align: center; }
+      main div .flexproyecto .card .tag-container .tag {
+        display: inline-block;
+        background-color: #18330d;
+        color: #ffffff;
+        padding: 9px;
+        border-radius: 10px;
+        margin: 5px;
+        font-size: 70%; }
 
 main section .contenedor-otro {
   width: 90%;
