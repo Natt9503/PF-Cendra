@@ -497,7 +497,7 @@ footer {
     padding: 30px;
     color: white;
     font-style: normal;
-    margin: auto;
+    margin-top: 20px;
     display: flex;
     flex-direction: column; }
   .logo-container {
@@ -554,15 +554,26 @@ footer {
     width: 100%; }
   .maincontacto iframe {
     width: 100%;
-    height: 999px; } }
+    height: 300px;
+    /* Ajusta este valor según sea necesario */
+    margin: 20px 0;
+    /* Ajusta el margen según sea necesario */ } }
 
 @media screen and (max-width: 609px) {
   .maincontacto {
     padding: 20px; }
   .maincontacto iframe {
-    width: 300px;
-    height: 400px;
-    margin: 20px; } }
+    width: 100%;
+    height: 300px;
+    /* Ajusta este valor según sea necesario */
+    margin: 20px 0;
+    /* Ajusta el margen según sea necesario */ } }
+
+@media screen and (max-width: 390px) {
+  .maincontacto {
+    padding: 60px; }
+  .maincontacto iframe {
+    display: none; } }
 
 @media screen and (max-width: 587px) {
   .social {

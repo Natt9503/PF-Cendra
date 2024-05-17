@@ -132,7 +132,8 @@
         padding: 30px;
         color: white;
         font-style: normal;
-        margin: auto;
+        
+        margin-top: 20px;
         display: flex;
         flex-direction: column;
     }
@@ -221,7 +222,8 @@
 
     .maincontacto iframe {
         width: 100%;
-        height: 999px;
+        height: 300px; /* Ajusta este valor según sea necesario */
+        margin: 20px 0; /* Ajusta el margen según sea necesario */
     }
 }
 @media screen and (max-width: 609px){
@@ -229,11 +231,21 @@
         padding: 20px;
     }
     .maincontacto iframe {
-        width: 300px;
-        height: 400px;
-        margin: 20px;
+        width: 100%;
+        height: 300px; /* Ajusta este valor según sea necesario */
+        margin: 20px 0; /* Ajusta el margen según sea necesario */
     }
 }
+
+@media screen and (max-width: 390px) {
+        .maincontacto{
+        padding: 60px;
+    }
+    .maincontacto iframe {
+        display: none;
+    }
+}
+
 
 //**---redes en el costado---*//
 @media screen and (max-width: 587px){
