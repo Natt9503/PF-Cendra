@@ -1,6 +1,5 @@
+//***---cards index----*//
 @media screen and (max-width:902px) {
-
-    //!---MEDIA QUERY cards----*//
     main .cardsindex .flextitulo {
         /* titulo de seccion */
         color: #04231d;
@@ -60,7 +59,8 @@
 
 @media screen and (max-width:580px) {
     main .cardsindex {
-        padding: 20px;
+        padding-left: 50px;
+        padding-top: 30px;
     }
 
     main .cardsindex .flextitulo {
@@ -124,6 +124,8 @@
     }
 }
 
+//**---footer----*//
+
 @media screen and (max-width: 785px) {
     footer {
         background-color: #04231d;
@@ -133,7 +135,6 @@
         margin: auto;
         display: flex;
         flex-direction: column;
-
     }
 
     .logo-container {
@@ -174,8 +175,6 @@
         font-size: 20px;
         /* Esto es solo un ejemplo, puedes ajustarlo según tu diseño */
         margin-right: 5px;
-
-
     }
 
     footer div .social-icons {
@@ -186,8 +185,6 @@
         /* Ajusta el espacio entre los iconos */
     }
 
-
-
     .fixed {
         position: fixed;
         bottom: 10px;
@@ -195,14 +192,7 @@
     }
 }
 
-
-
-
-
-
-
 //!**MAIN DE PROYECTOS**/
-
 /* Ancho de la card, calculado para que haya 3 cards por fila */
 /* Ajusta el ancho según la resolución de la pantalla */
 @media screen and (max-width: 768px) {
@@ -242,5 +232,24 @@
         width: 300px;
         height: 400px;
         margin: 20px;
+    }
+}
+
+//**---redes en el costado---*//
+@media screen and (max-width: 587px){
+    .social { //*!ESTO EN DONDE DEBERIA PONERLO?*/
+        position: fixed;
+        top: 450px;
+        display: flex;
+        flex-direction: column;
+        z-index: 10;
+    
+        .social .redes {
+            width: 10px;
+            height: 10px;
+            border-radius: 10px;
+            margin: 10px 20px 10px 10px;
+            padding: 80px;
+        }
     }
 }
