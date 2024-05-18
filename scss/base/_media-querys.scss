@@ -57,73 +57,28 @@
 }
 
 
-@media screen and (max-width:580px) {
-    main .cardsindex {
-        padding-left: 50px;
-        padding-top: 30px;
+@media screen and (max-width: 600px) {
+    .cardsindex {
+        padding: 10px;
     }
 
-    main .cardsindex .flextitulo {
-        color: #04231d;
-        font-family: 'roboto';
-        font-weight: bold;
-        margin: 5px;
+    .cardsindex .flextitulo {
         padding: 5px;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-self: center;
     }
 
-    main .cardsindex .flextitulo h2 {
-        font-size: 25px;
-        font-weight: bold;
+    .cardsindex .flexcardpadre {
+        justify-content: center;
     }
 
-    main .cardsindex .flexcardpadre .flexcardhijo {
-        border: 2px #04231da1 solid;
-        border-radius: 10px;
-        width: 500px;
-        height: 600px;
-        text-align: center;
-        margin: 10px;
-        /* espacio entre cada card */
-        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
+    .cardsindex .flexcardpadre .flexcardhijo {
+        width: calc(100% - 20px); /* Adjust for gap */
+        margin: 10px 0;
     }
 
-    main .cardsindex .flexcardpadre .flexcardhijo {
-        border: 2px #04231da1 solid;
-        border-radius: 10px;
-        width: 500px;
-        height: 600px;
-        text-align: center;
-        margin: 10px;
-        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    main .cardsindex .flexcardpadre .flexcardhijo img {
-        border-radius: 10px 10px 0px 0px;
+    .cardsindex .flexcardpadre .flexcardhijo img {
         width: 100%;
-        height: auto;
-    }
-
-    main .cardsindex .flexcardpadre .flexcardhijo h5 {
-        margin: 5px;
-    }
-
-    main .cardsindex .flexcardpadre .flexcardhijo p {
-        margin: 10px;
     }
 }
-
 //**---footer----*//
 
 @media screen and (max-width: 785px) {
@@ -237,7 +192,7 @@
     }
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 470px) {
         .maincontacto{
         padding: 60px;
     }
